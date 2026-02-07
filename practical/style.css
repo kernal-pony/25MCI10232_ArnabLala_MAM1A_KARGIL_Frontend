@@ -1,0 +1,127 @@
+/* *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html, body{
+    height: 200%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    align-items: end;
+
+     background-image: url("https://imgs.search.brave.com/1YE4gztrjU5Y664LfIB7S_bGbFdLXNCKGSAlTJu7HSo/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9taXIt/czMtY2RuLWNmLmJl/aGFuY2UubmV0L3By/b2plY3RzLzQwNC8z/YmIxN2MxOTA0MzM4/MzcuWTNKdmNDd3lO/RGt6TERFNU5UQXNO/aXd3LmpwZw");
+    background-size: cover; 
+    
+    
+}
+#div1{
+    height: 100px;
+    width: 100px;
+    border: 3px solid red;
+}
+
+#div2{
+    position: fixed;
+    top: 0;
+    left: 50px;
+    bottom: 3500px;
+    height: 100%;
+    width: 50%;
+    border: 2px solid black;
+}
+#div3{
+    
+    bottom: 50px;
+    height: 50%;
+    width: 50%;
+    border: 2px solid blue;
+} */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,body {
+    width: 100%;
+    
+    display: flex;
+    flex-direction: column;
+   background-image:url ("https://imgs.search.brave.com/FS_jzZMMv2ivKSS8Nork3WgHz6CRGvWIPZp0yFrKm7Q/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9jZG4t/aW1hZ2Uubm92b3Jl/c3VtZS5jb20vaW1h/Z2UvY21zL21lZGlh/L2luY2x1ZGluZy1w/aG90by1vbi1yZXN1/bWUtYmcucG5nP3dp/ZHRoPTE5MjAmcXVh/bGl0eT03NSZmb3Jt/YXQ9d2VicA   ");
+    color: rgb(16, 13, 2);
+}
+
+
+header {
+    height: auto;
+    width: 100%;
+    display: flex;
+    flex-direction:column;
+    justify-content: center;
+    align-items: center;
+    padding: 25px;
+    border-bottom: 2px solid rgb(6, 19, 19);
+}
+
+header img {
+    border: 3px solid cyan;
+    border-radius: 50%;
+    margin-top: 10px;
+}
+
+nav {
+    width: 100%;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    border-bottom: 1px solid gray;
+}
+
+nav a {
+    color: cyan;
+    text-decoration: none;
+}
+
+
+section {
+    width: 90%;
+    margin: 20px auto;
+    padding: 20px;
+    border: 2px solid cyan;
+}
+
+article {
+    border-radius: 20%;
+    width: 100%;
+    margin-top: 15px;
+    padding: 15px;
+    border: 1px solid gray;
+}
+
+ul {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-items: center;
+    gap: 15px;
+}
+
+table {
+    width: 100%;
+    border: 2px solid cyan;
+}
+
+form {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
