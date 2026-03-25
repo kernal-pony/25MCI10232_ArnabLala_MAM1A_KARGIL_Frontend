@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Smart To-Do Manager</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container mt-4">
+
+    <h2 class="text-center mb-4">Smart ToDo Manager</h2>
+    <div class="row g-2 mb-3">
+        <div class="col-md-4">
+            <input type="text" id="taskInput" class="form-control" placeholder="Enter Task">
+        </div>
+        <div class="col-md-3">
+            <select id="priority" class="form-select">
+                <option value="Low">Low</option>
+                <option value="Medium">Medium</option>
+                <option value="High">High</option>
+            </select>
+        </div>
+        <div class="col-md-3">
+            <input type="date" id="deadline" class="form-control">
+        </div>
+
+        <div class="col-md-2">
+            <button class="btn btn-primary w-100" onclick="addTask()">Add</button>
+        </div>
+    </div>
+    <div class="mb-3 text-center">
+        <button class="btn btn-secondary" onclick="debounceFilter('all')">All</button>
+    <button class="btn btn-success" onclick="debounceFilter('completed')">Completed</button>
+        <button class="btn btn-warning" onclick="debounceFilter('pending')">Pending</button>
+</div>
+
+    
+    <div class="mb-3 text-center">
+        <button class="btn btn-info" onclick="sortTasks('priority')">Sort by Priority</button>
+        <button class="btn btn-dark" onclick="sortTasks('deadline')">Sort by Deadline</button>
+    </div>
+    <div class="mb-3 text-center">
+        <p>Total: <span id="total">0</span> |
+           Completed: <span id="completed">0</span> |
+           Pending: <span id="pending">0</span></p>
+    </div>
+
+    
+    <div id="taskList"></div>
+
+</div>
+<script src="script.js"></script>
+</body>
+</html>
